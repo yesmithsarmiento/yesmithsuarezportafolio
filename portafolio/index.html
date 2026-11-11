@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yesmith Sarmiento — Junior Full-Stack Developer</title>
+
+  <!-- Fuentes de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=Montserrat:wght@900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+  <!-- Estilos (main.css importa el resto) -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body id="top">
+  <!-- Fondo negro con ramas de cerezo, estrellas y pétalos -->
+  <div class="fondo-cerezo" aria-hidden="true"></div>
+  <!-- Ramas: quedan arriba y se van con el scroll -->
+  <div class="ramas" aria-hidden="true">
+    <img class="rama rama-izq" src="./assets/images/hero/cerezo-izq.webp" alt="">
+    <img class="rama rama-der" src="./assets/images/hero/cerezo-der.webp" alt="">
+  </div>
+  <div class="estrellas" data-estrellas aria-hidden="true"></div>
+  <div class="petalos" data-petalos aria-hidden="true"></div>
+
+  <!-- Navegación -->
+  <header class="header" data-header>
+    <div class="container header-nav-container">
+
+      <a href="#top" class="logo">
+        <h1 class="logo-text">Yesmith<span class="dot">.</span></h1>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <a href="#top" class="logo">
+            <h1 class="logo-text">Yesmith<span class="dot">.</span></h1>
+          </a>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li><a href="#home" class="navbar-link" data-nav-link>Inicio</a></li>
+          <li><a href="#about" class="navbar-link" data-nav-link>Sobre Mí</a></li>
+          <li><a href="#portfolio" class="navbar-link" data-nav-link>Proyectos</a></li>
+          <li><a href="#contact" class="navbar-link" data-nav-link>Contacto</a></li>
+        </ul>
+
+        <ul class="social-list">
+          <li>
+            <a href="https://github.com/yesmithsarmiento" target="_blank" class="social-link" aria-label="GitHub">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/yesmith-sarmiento-web-developer/" target="_blank" class="social-link" aria-label="LinkedIn">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:yesmithadrianasarmiento@gmail.com" class="social-link" aria-label="Correo Electrónico">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- Inicio -->
+      <section class="section hero" id="home" aria-label="home">
+
+    <div class="container hero-container-pro">
+
+        <!-- LUNA DECORATIVA: luna creciente con lucero, flotando -->
+        <div class="luna-flotante" aria-hidden="true">
+          <img class="luna-img" src="./assets/images/hero/luna-nueva.png" alt="" width="550" height="460">
+        </div>
+
+    </div>
+  </section>
+
+      <!-- Sobre mí -->
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <div class="wrapper">
+            <h2 class="about-title">
+              <span class="thick-underline">Sobre mí</span>
+            </h2>
+
+            <p class="section-text">
+              Soy desarrolladora de Barranquilla, Colombia. Me apasiona estructurar arquitecturas backend sólidas sin descuidar el impacto visual y la interactividad en el cliente, y siempre estoy aprendiendo nuevas tecnologías para construir software que de verdad funcione de manera impecable.
+            </p>
+          </div>
+
+          <!-- Lo que me encanta -->
+          <div class="gustos" data-reveal="bottom">
+            
+            <h3 class="gustos-title">Lo que me encanta</h3>
+            <ul class="gustos-list">
+              <li class="gusto " style="--i: 0"><ion-icon name="create-outline" aria-hidden="true"></ion-icon><span>Redactar y escribir</span></li>
+              <li class="gusto gusto-azul" style="--i: 1"><ion-icon name="water-outline" aria-hidden="true"></ion-icon><span>El azul</span></li>
+              <li class="gusto " style="--i: 2"><ion-icon name="sunny-outline" aria-hidden="true"></ion-icon><span>El atardecer y el sol</span></li>
+              <li class="gusto " style="--i: 3"><ion-icon name="restaurant-outline" aria-hidden="true"></ion-icon><span>Comer rico, miau</span></li>
+              <li class="gusto " style="--i: 4"><ion-icon name="film-outline" aria-hidden="true"></ion-icon><span>Ver pelis</span></li>
+              <li class="gusto " style="--i: 5"><ion-icon name="people-outline" aria-hidden="true"></ion-icon><span>Mi familia</span></li>
+              <li class="gusto " style="--i: 6"><ion-icon name="compass-outline" aria-hidden="true"></ion-icon><span>Conocer nuevos lugares</span></li>
+              <li class="gusto " style="--i: 7"><ion-icon name="paw-outline" aria-hidden="true"></ion-icon><span>Los animales, mis mejores amigos</span></li>
+              <li class="gusto " style="--i: 8"><ion-icon name="musical-notes-outline" aria-hidden="true"></ion-icon><span>Escuchar música</span></li>
+              <li class="gusto " style="--i: 9"><ion-icon name="sparkles-outline" aria-hidden="true"></ion-icon><span>Bailar</span></li>
+              <li class="gusto " style="--i: 10"><ion-icon name="earth-outline" aria-hidden="true"></ion-icon><span>Aprender de nuevas culturas</span></li>
+              <li class="gusto gusto-paz" style="--i: 11"><ion-icon name="heart-outline" aria-hidden="true"></ion-icon><span>Paz y amor</span></li>
+            </ul>
+          </div>
+
+          <!-- Roles -->
+          <ul class="grid-list">
+            <li>
+              <div class="about-card">
+                <div class="card-icon">
+                  <img src="./assets/images/icons/icon-1.svg" width="40" height="40" alt="Desarrollo">
+                </div>
+                <h4 class="h3 card-title">Backend Dev</h4>
+                <p class="card-text">Construcción de APIs, lógica de negocio con Java, Spring Boot y diseño de bases de datos con SQL y MySQL.</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="about-card">
+                <div class="card-icon">
+                  <img src="./assets/images/icons/icon-2.svg" width="40" height="40" alt="Diseño">
+                </div>
+                <h4 class="h3 card-title">Frontend Dev</h4>
+                <p class="card-text">Interfaces interactivas, dinámicas y totalmente responsivas usando JavaScript, HTML, CSS y Bootstrap.</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="about-card">
+                <div class="card-icon">
+                  <img src="./assets/images/icons/icon-3.svg" width="40" height="40" alt="Análisis">
+                </div>
+                <h4 class="h3 card-title">Functional Analysis</h4>
+                <p class="card-text">Levantamiento de requerimientos, diseño de flujos de procesos y estructuración lógica para soluciones de software.</p>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- Estudios y Cursos -->
+      <section class="section education" id="education" aria-label="education">
+        <div class="container">
+
+          <div class="education-head">
+            <h2 class="about-title">
+              <span class="thick-underline">Estudios y Cursos</span>
+            </h2>
+
+            <!-- Descarga de hoja de vida -->
+            <a href="./assets/docs/CV_Yesmith_Sarmiento.pdf" download="CV_Yesmith_Sarmiento.pdf" class="btn btn-cv">
+              <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
+              <span>Descargar Hoja de Vida</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Carrusel continuo de tarjetas (marquee.js duplica las tarjetas para el bucle) -->
+        <div class="education-marquee" data-marquee>
+          <div class="education-track" data-marquee-track>
+          <div class="education-card highlight-card">
+            <div class="card-icon"><ion-icon name="code-working-outline" aria-hidden="true"></ion-icon></div>
+            <div class="card-content">
+              <span class="card-date">2026</span>
+              <h3 class="card-title">Junior Full-Stack Java Developer</h3>
+              <p class="card-institution">Generation</p>
+            </div>
+          </div>
+
+          <div class="education-card ">
+            <div class="card-icon"><ion-icon name="school-outline" aria-hidden="true"></ion-icon></div>
+            <div class="card-content">
+              <span class="card-date">2023 – 2025</span>
+              <h3 class="card-title">Tecnólogo en Análisis y Desarrollo de Software</h3>
+              <p class="card-institution">SENA Centro Industrial del Diseño y la Manufactura (Floridablanca, Santander)</p>
+            </div>
+          </div>
+
+          <div class="education-card ">
+            <div class="card-icon"><ion-icon name="code-slash-outline" aria-hidden="true"></ion-icon></div>
+            <div class="card-content">
+              <span class="card-date">2023</span>
+              <h3 class="card-title">Programación</h3>
+              <p class="card-institution">Talentotech</p>
+            </div>
+          </div>
+
+          <div class="education-card ">
+            <div class="card-icon"><ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon></div>
+            <div class="card-content">
+              <span class="card-date">2024</span>
+              <h3 class="card-title">Conceptos Ciberseguridad</h3>
+              <p class="card-institution">SENA</p>
+            </div>
+          </div>
+
+          <div class="education-card ">
+            <div class="card-icon"><ion-icon name="megaphone-outline" aria-hidden="true"></ion-icon></div>
+            <div class="card-content">
+              <span class="card-date">2026</span>
+              <h3 class="card-title">Marketing Digital a través de Redes Sociales</h3>
+              <p class="card-institution">MinTIC & Universidad Distrital</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- Proyectos -->
+      <section class="section project" id="portfolio" aria-label="portfolio">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <div class="project-heading">
+              
+              <h3 class="about-title"><span class="thick-underline">Mis Proyectos</span></h3>
+            </div>
+            <a href="https://github.com/yesmithsarmiento" target="_blank" rel="noopener noreferrer" class="btn">Ver Repositorio GitHub</a>
+          </div>
+
+          <ul class="grid-list project-grid">
+
+            <!-- Proyecto 1 -->
+            <li data-reveal="destello" style="--d: 0s">
+              <article class="project-card project-card-1">
+                <div class="card-thumb">
+                  <img src="./assets/images/projects/proyecto1.jpeg" alt="Vista del sitio web para pastelería" style="object-position: top center" loading="lazy">
+                </div>
+                <div class="card-content">
+                  <ul class="chips" aria-label="Tecnologías"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                  <h4 class="card-title">Sitio Web para Pastelería</h4>
+                  <p class="card-text">Plataforma web interactiva para una tienda de repostería, con catálogo dinámico de productos, filtros de búsqueda y diseño responsivo.</p>
+                  <a href="https://github.com/yesmithsarmiento/proyec" target="_blank" rel="noopener noreferrer" class="btn-text">
+                    <span>Ver Código</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+              </article>
+            </li>
+
+            <!-- Proyecto 2 -->
+            <li data-reveal="destello" style="--d: 0.18s">
+              <article class="project-card project-card-2">
+                <div class="card-thumb">
+                  <img src="./assets/images/projects/pokemon.jpeg" alt="Vista de la PokéApp con buscador de Pokémons" style="object-position: left center" loading="lazy">
+                </div>
+                <div class="card-content">
+                  <ul class="chips" aria-label="Tecnologías"><li>JavaScript</li><li>APIs</li><li>Web Storage</li></ul>
+                  <h4 class="card-title">PokéApp — Web Storage API</h4>
+                  <p class="card-text">Aplicación colaborativa de búsqueda de Pokémons que guarda las búsquedas recientes con Local y Session Storage.</p>
+                  <a href="https://github.com/Niikolas970/LAB-The-Web-Storage-APIs" target="_blank" rel="noopener noreferrer" class="btn-text">
+                    <span>Ver Código</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+              </article>
+            </li>
+
+            <!-- Proyecto 3 -->
+            <li data-reveal="destello" style="--d: 0.36s">
+              <article class="project-card project-card-3">
+                <div class="card-thumb">
+                  <img src="./assets/images/projects/kumo.jpeg" alt="Vista de la tienda virtual KUMO de merch de anime y manga" style="object-position: center top" loading="lazy">
+                </div>
+                <div class="card-content">
+                  <ul class="chips" aria-label="Tecnologías"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                  <h4 class="card-title">KUMO — Tienda de Merch</h4>
+                  <p class="card-text">Tienda virtual de merch de anime, manga y más, con catálogo, carrito de compras y registro de usuarios.</p>
+                  <a href="https://github.com/yesmithsarmiento" target="_blank" rel="noopener noreferrer" class="btn-text">
+                    <span>Ver Código</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+              </article>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section class="section contact" id="contact" aria-label="contact">
+        <div class="container">
+
+          <div class="contact-card">
+            <div class="contact-content">
+              <h3 class="h2 section-title">¿Tienes un proyecto en mente?</h3>
+              <p class="section-text">
+                Estoy disponible para vacantes, proyectos freelance o colaboraciones de desarrollo. ¡Hablemos!
+              </p>
+            </div>
+
+            <form action="https://formsubmit.co/yesmithadrianasarmiento@gmail.com" method="POST" class="contact-form">
+              
+              <!-- Redirección automática tras enviar el mensaje -->
+              <input type="hidden" name="_next" value="https://yesmithsarmiento.github.io/yesmith-repositorio/">
+              
+              <!-- Desactiva el captcha para un envío directo -->
+              <input type="hidden" name="_captcha" value="false">
+
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Tu Nombre" required class="input-field">
+                <input type="email" name="email" placeholder="Tu Correo" required class="input-field">
+              </div>
+              <textarea name="message" placeholder="Escribe tu mensaje aquí..." required class="input-field"></textarea>
+              
+              <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">
+        &copy; 2026 Yesmith Sarmiento. 
+      </p>
+      <ul class="social-list">
+        <li>
+          <a href="https://github.com/yesmithsarmiento" target="_blank" class="social-link" aria-label="GitHub">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/in/yesmith-sarmiento-web-developer/" target="_blank" class="social-link" aria-label="LinkedIn">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="mailto:yesmithadrianasarmiento@gmail.com" class="social-link" aria-label="Correo Electrónico">
+            <ion-icon name="mail-outline"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Scripts (el orden importa: utils va primero) -->
+  <script src="./assets/js/utils.js" defer></script>
+  <script src="./assets/js/navbar.js" defer></script>
+  <script src="./assets/js/header.js" defer></script>
+  <script src="./assets/js/reveal.js" defer></script>
+  <script src="./assets/js/petalos.js" defer></script>
+  <script src="./assets/js/estrellas.js" defer></script>
+  <script src="./assets/js/marquee.js" defer></script>
+  <!-- Íconos Ionicons (CDN) -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
