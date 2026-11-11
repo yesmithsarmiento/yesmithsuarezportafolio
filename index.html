@@ -107,68 +107,69 @@
               <span class="thick-underline">Sobre mí</span>
             </h2>
 
-            <p class="section-text">
-              Soy desarrolladora de Barranquilla, Colombia. Me apasiona estructurar arquitecturas backend sólidas sin descuidar el impacto visual y la interactividad en el cliente, y siempre estoy aprendiendo nuevas tecnologías para construir software que de verdad funcione de manera impecable.
-            </p>
+            <div class="about-story" data-reveal="bottom">
+              <p class="section-text">
+                Este camino empezó en mi colegio, en la clase de fundamentos de programación. Con la guía de mi profe y una pequeña placa llamada <strong class="resaltado">micro:bit</strong> descubrí que unas líneas de código podían convertirse en algo que de verdad funcionaba. Ahí empecé a amar la programación.
+              </p>
+              <p class="section-text">
+                Desde entonces no he parado de aprender: estudié Análisis y Desarrollo de Software en el SENA y hoy me formo como Junior Full-Stack Java Developer. Soy de Barranquilla, Colombia, y me gusta construir backends sólidos sin descuidar la interfaz y la experiencia de quien usa el software.
+              </p>
+            </div>
           </div>
 
-          <!-- Lo que me encanta -->
-          <div class="gustos" data-reveal="bottom">
-            
-            <h3 class="gustos-title">Lo que me encanta</h3>
-            <ul class="gustos-list">
-              <li class="gusto " style="--i: 0"><ion-icon name="create-outline" aria-hidden="true"></ion-icon><span>Redactar y escribir</span></li>
-              <li class="gusto gusto-azul" style="--i: 1"><ion-icon name="water-outline" aria-hidden="true"></ion-icon><span>El azul</span></li>
-              <li class="gusto " style="--i: 2"><ion-icon name="sunny-outline" aria-hidden="true"></ion-icon><span>El atardecer y el sol</span></li>
-              <li class="gusto " style="--i: 3"><ion-icon name="restaurant-outline" aria-hidden="true"></ion-icon><span>Comer rico, miau</span></li>
-              <li class="gusto " style="--i: 4"><ion-icon name="film-outline" aria-hidden="true"></ion-icon><span>Ver pelis</span></li>
-              <li class="gusto " style="--i: 5"><ion-icon name="people-outline" aria-hidden="true"></ion-icon><span>Mi familia</span></li>
-              <li class="gusto " style="--i: 6"><ion-icon name="compass-outline" aria-hidden="true"></ion-icon><span>Conocer nuevos lugares</span></li>
-              <li class="gusto " style="--i: 7"><ion-icon name="paw-outline" aria-hidden="true"></ion-icon><span>Los animales, mis mejores amigos</span></li>
-              <li class="gusto " style="--i: 8"><ion-icon name="musical-notes-outline" aria-hidden="true"></ion-icon><span>Escuchar música</span></li>
-              <li class="gusto " style="--i: 9"><ion-icon name="sparkles-outline" aria-hidden="true"></ion-icon><span>Bailar</span></li>
-              <li class="gusto " style="--i: 10"><ion-icon name="earth-outline" aria-hidden="true"></ion-icon><span>Aprender de nuevas culturas</span></li>
-              <li class="gusto gusto-paz" style="--i: 11"><ion-icon name="heart-outline" aria-hidden="true"></ion-icon><span>Paz y amor</span></li>
-            </ul>
+          <!-- Lo que hago: carrusel de roles -->
+          <div class="roles" data-carousel data-reveal="bottom">
+            <div class="roles-head">
+              <h3 class="roles-title">Lo que hago</h3>
+              <div class="roles-controls">
+                <button class="roles-btn" type="button" aria-label="Anterior" data-carousel-prev>
+                  <ion-icon name="chevron-back-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <button class="roles-btn" type="button" aria-label="Siguiente" data-carousel-next>
+                  <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+            </div>
+
+            <div class="roles-track" data-carousel-track tabindex="0" role="region" aria-label="Áreas en las que trabajo">
+              <div class="roles-slide">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img src="./assets/images/icons/icon-1.svg" width="40" height="40" alt="Desarrollo">
+                  </div>
+                  <h4 class="h3 card-title">Backend Dev</h4>
+                  <p class="card-text">Construcción de APIs, lógica de negocio con Java, Spring Boot y diseño de bases de datos con SQL y MySQL.</p>
+                </div>
+              </div>
+
+              <div class="roles-slide">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img src="./assets/images/icons/icon-2.svg" width="40" height="40" alt="Diseño">
+                  </div>
+                  <h4 class="h3 card-title">Frontend Dev</h4>
+                  <p class="card-text">Interfaces interactivas, dinámicas y totalmente responsivas usando JavaScript, HTML, CSS y Bootstrap.</p>
+                </div>
+              </div>
+
+              <div class="roles-slide">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img src="./assets/images/icons/icon-3.svg" width="40" height="40" alt="Análisis">
+                  </div>
+                  <h4 class="h3 card-title">Functional Analysis</h4>
+                  <p class="card-text">Levantamiento de requerimientos, diseño de flujos de procesos y estructuración lógica para soluciones de software.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="roles-dots" data-carousel-dots aria-hidden="true"></div>
           </div>
-
-          <!-- Roles -->
-          <ul class="grid-list">
-            <li>
-              <div class="about-card">
-                <div class="card-icon">
-                  <img src="./assets/images/icons/icon-1.svg" width="40" height="40" alt="Desarrollo">
-                </div>
-                <h4 class="h3 card-title">Backend Dev</h4>
-                <p class="card-text">Construcción de APIs, lógica de negocio con Java, Spring Boot y diseño de bases de datos con SQL y MySQL.</p>
-              </div>
-            </li>
-
-            <li>
-              <div class="about-card">
-                <div class="card-icon">
-                  <img src="./assets/images/icons/icon-2.svg" width="40" height="40" alt="Diseño">
-                </div>
-                <h4 class="h3 card-title">Frontend Dev</h4>
-                <p class="card-text">Interfaces interactivas, dinámicas y totalmente responsivas usando JavaScript, HTML, CSS y Bootstrap.</p>
-              </div>
-            </li>
-
-            <li>
-              <div class="about-card">
-                <div class="card-icon">
-                  <img src="./assets/images/icons/icon-3.svg" width="40" height="40" alt="Análisis">
-                </div>
-                <h4 class="h3 card-title">Functional Analysis</h4>
-                <p class="card-text">Levantamiento de requerimientos, diseño de flujos de procesos y estructuración lógica para soluciones de software.</p>
-              </div>
-            </li>
-          </ul>
 
         </div>
       </section>
 
-      <!-- Estudios y Cursos -->
+      <!-- Estudios y Cursos: línea cronológica -->
       <section class="section education" id="education" aria-label="education">
         <div class="container">
 
@@ -184,56 +185,63 @@
             </a>
           </div>
 
-        </div>
+          <ol class="timeline">
+            <li class="timeline-item" data-reveal="left">
+              <div class="timeline-card">
+                <div class="card-icon"><ion-icon name="code-slash-outline" aria-hidden="true"></ion-icon></div>
+                <div class="card-content">
+                  <span class="card-date">2023</span>
+                  <h3 class="card-title">Programación</h3>
+                  <p class="card-institution">Talentotech</p>
+                </div>
+              </div>
+            </li>
 
-        <!-- Carrusel continuo de tarjetas (marquee.js duplica las tarjetas para el bucle) -->
-        <div class="education-marquee" data-marquee>
-          <div class="education-track" data-marquee-track>
-          <div class="education-card highlight-card">
-            <div class="card-icon"><ion-icon name="code-working-outline" aria-hidden="true"></ion-icon></div>
-            <div class="card-content">
-              <span class="card-date">2026</span>
-              <h3 class="card-title">Junior Full-Stack Java Developer</h3>
-              <p class="card-institution">Generation</p>
-            </div>
-          </div>
+            <li class="timeline-item" data-reveal="right">
+              <div class="timeline-card">
+                <div class="card-icon"><ion-icon name="school-outline" aria-hidden="true"></ion-icon></div>
+                <div class="card-content">
+                  <span class="card-date">2023 – 2025</span>
+                  <h3 class="card-title">Tecnólogo en Análisis y Desarrollo de Software</h3>
+                  <p class="card-institution">SENA Centro Industrial del Diseño y la Manufactura (Floridablanca, Santander)</p>
+                </div>
+              </div>
+            </li>
 
-          <div class="education-card ">
-            <div class="card-icon"><ion-icon name="school-outline" aria-hidden="true"></ion-icon></div>
-            <div class="card-content">
-              <span class="card-date">2023 – 2025</span>
-              <h3 class="card-title">Tecnólogo en Análisis y Desarrollo de Software</h3>
-              <p class="card-institution">SENA Centro Industrial del Diseño y la Manufactura (Floridablanca, Santander)</p>
-            </div>
-          </div>
+            <li class="timeline-item" data-reveal="left">
+              <div class="timeline-card">
+                <div class="card-icon"><ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon></div>
+                <div class="card-content">
+                  <span class="card-date">2024</span>
+                  <h3 class="card-title">Conceptos Ciberseguridad</h3>
+                  <p class="card-institution">SENA</p>
+                </div>
+              </div>
+            </li>
 
-          <div class="education-card ">
-            <div class="card-icon"><ion-icon name="code-slash-outline" aria-hidden="true"></ion-icon></div>
-            <div class="card-content">
-              <span class="card-date">2023</span>
-              <h3 class="card-title">Programación</h3>
-              <p class="card-institution">Talentotech</p>
-            </div>
-          </div>
+            <li class="timeline-item" data-reveal="right">
+              <div class="timeline-card highlight-card">
+                <div class="card-icon"><ion-icon name="code-working-outline" aria-hidden="true"></ion-icon></div>
+                <div class="card-content">
+                  <span class="card-date">2026</span>
+                  <h3 class="card-title">Junior Full-Stack Java Developer</h3>
+                  <p class="card-institution">Generation</p>
+                </div>
+              </div>
+            </li>
 
-          <div class="education-card ">
-            <div class="card-icon"><ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon></div>
-            <div class="card-content">
-              <span class="card-date">2024</span>
-              <h3 class="card-title">Conceptos Ciberseguridad</h3>
-              <p class="card-institution">SENA</p>
-            </div>
-          </div>
+            <li class="timeline-item" data-reveal="left">
+              <div class="timeline-card">
+                <div class="card-icon"><ion-icon name="megaphone-outline" aria-hidden="true"></ion-icon></div>
+                <div class="card-content">
+                  <span class="card-date">2026</span>
+                  <h3 class="card-title">Marketing Digital a través de Redes Sociales</h3>
+                  <p class="card-institution">MinTIC &amp; Universidad Distrital</p>
+                </div>
+              </div>
+            </li>
+          </ol>
 
-          <div class="education-card ">
-            <div class="card-icon"><ion-icon name="megaphone-outline" aria-hidden="true"></ion-icon></div>
-            <div class="card-content">
-              <span class="card-date">2026</span>
-              <h3 class="card-title">Marketing Digital a través de Redes Sociales</h3>
-              <p class="card-institution">MinTIC & Universidad Distrital</p>
-            </div>
-          </div>
-          </div>
         </div>
       </section>
       
@@ -381,7 +389,7 @@
   <script src="./assets/js/reveal.js" defer></script>
   <script src="./assets/js/petalos.js" defer></script>
   <script src="./assets/js/estrellas.js" defer></script>
-  <script src="./assets/js/marquee.js" defer></script>
+  <script src="./assets/js/carousel.js" defer></script>
   <!-- Íconos Ionicons (CDN) -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

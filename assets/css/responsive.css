@@ -9,11 +9,6 @@
   .section-text { --fs-5: 2rem; }
   .education-head { flex-direction: row; justify-content: space-between; align-items: center; }
   
-  /* Ajuste de tarjetas de roles Sobre Mí */
-  .about .grid-list { 
-    grid-template-columns: repeat(2, 1fr); 
-    align-items: stretch;
-  }
   .project .title-wrapper { flex-direction: row; justify-content: space-between; align-items: center; gap: 30px; }
   .project .btn { margin-block-start: 0; }
   .contact .section-text { --fs-5: 1.8rem; }
@@ -64,23 +59,16 @@
   .btn-wrapper-pro { justify-content: flex-start; }
   .hero::before { top: 30%; left: 45%; }
 
-  /* Ajuste de 3 tarjetas de roles Sobre Mí (Misma Altura) */
-  .about .grid-list { 
-    grid-template-columns: repeat(3, 1fr); 
-    align-items: stretch;
-  }
 
   .contact-card { grid-template-columns: 0.9fr 1.1fr; align-items: center; gap: 80px; padding: 60px; }
 }
 
 @media (min-width: 1200px) {
   .container { max-width: 1140px; }
-  .about .grid-list { gap: 40px; }
   .contact-card { gap: 100px; }
 }
 
 @media (min-width: 1400px) {
   .container { max-width: 1320px; }
   .about .wrapper { gap: 100px; }
-  .about .grid-list { gap: 50px; }
 }
